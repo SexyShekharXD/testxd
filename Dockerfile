@@ -1,4 +1,4 @@
-FROM ubantu:latest
+FROM ubuntu:20.04
 RUN sudo apt update -y && sudo apt upgrade -y
 RUN sudo apt install snapd openssh-server -y
 RUN sudo systemctl status ssh

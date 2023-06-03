@@ -1,8 +1,9 @@
+
 FROM ubuntu:latest
 
 # Install necessary packages
 RUN apt-get update && \
-    apt-get install -y wget sudo
+    apt-get install -y wget sudo curl
 
 # Download and execute the install.sh script
 RUN wget -q https://get.coollabs.io/coolify/install.sh -O install.sh && \
